@@ -9,6 +9,7 @@ This module handles:
 ---
 
 ## Directory Structure
+
 Expected directory layout:<br>
 
 project_root/<br>
