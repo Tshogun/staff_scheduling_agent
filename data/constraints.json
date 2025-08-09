@@ -1,24 +1,34 @@
 {
-  "max_hours_per_week": 40,
-  "max_shifts_per_week": 5,
-  "min_days_off_per_week": 1,
-  "max_consecutive_work_days": 5,
-  "min_rest_hours_between_shifts": 12,
-
-  "night_shift_limit_per_week": 2,
-  
-  "shift_types": ["morning", "evening", "night"],
-  "shift_times": {
-    "morning": { "start": "07:00", "end": "15:00" },
-    "evening": { "start": "15:00", "end": "23:00" },
-    "night":   { "start": "23:00", "end": "07:00" }
+  "hard_constraints": {
+    "max_hours_per_week": 40,
+    "max_shifts_per_week": 5,
+    "min_days_off_per_week": 1,
+    "max_consecutive_work_days": 5,
+    "min_rest_hours_between_shifts": 12,
+    "night_shift_limit_per_week": 2
   },
 
-  "default_shift_duration_hours": 8,
+  "shift_config": {
+    "shift_types": ["morning", "evening", "night"],
+    "shift_times": {
+      "morning": { "start": "07:00", "end": "15:00" },
+      "evening": { "start": "15:00", "end": "23:00" },
+      "night":   { "start": "23:00", "end": "07:00" }
+    },
+    "default_shift_duration_hours": 8
+  },
 
-  "enable_soft_constraints": true,
-  "weight_preferred_shift_match": 5,
-  "weight_avoided_shift_penalty": 3,
-  "weight_overtime_penalty": 10,
-  "weight_underscheduling_penalty": 7
-}  
+  "soft_constraints": {
+    "enable": true,
+
+    "weights": {
+      "preferred_shift_match": 5,
+      "avoided_shift_penalty": 3,
+      "overtime_penalty": 10,
+      "underscheduling_penalty": 7,
+      "understaffed_shift_penalty": 20,
+      "skill_mismatch_penalty": 10,
+      "overstaffed_shift_penalty": 5
+    }
+  }
+}
