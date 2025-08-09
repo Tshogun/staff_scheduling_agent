@@ -1,0 +1,41 @@
+[
+  {
+    "staff_id": "456",
+    "name": "Alex Chen",
+    "role": "nurse",
+    "specialty": "pediatrics",
+    "max_shifts_per_week": 5,
+    "available_days": ["Monday", "Wednesday", "Thursday", "Saturday"],
+    "cannot_do_shift_types": ["night"],
+    "preferred_shifts": ["morning"],
+    "remaining_leaves": 10,
+    "last_leave_on": "2025-07-28",
+    "leave_requests": [
+      {
+        "date": "2025-08-15",
+        "reason": "Vacation",
+        "status": "pending"
+      }
+    ],
+    "past_shifts": [
+      { "shift_type": "morning", "location": "Pediatrics Ward" },
+      { "shift_type": "evening", "location": "Pediatrics Ward" }
+    ],
+    "metadata": {
+      "assigned_shifts_this_week": 3,
+      "consecutive_shifts": 2,
+      "last_assigned_day": "2025-08-03",
+      "last_assigned_shift_type": "night",
+      "consecutive_night_shifts": 2,
+      "total_shifts_assigned_this_month": 12,
+      "total_night_shifts_this_month": 4,
+      "avg_shifts_per_week": 3.8,
+      "days_since_last_day_off": 5,
+      "had_rest_day_yesterday": false,
+      "recent_shift_streak": ["evening", "evening", "night"],
+      "declined_shifts_recently": 1,
+      "preferred_shift_fill_rate": 0.67,
+      "last_leave_type": "vacation"
+    }
+  }
+]

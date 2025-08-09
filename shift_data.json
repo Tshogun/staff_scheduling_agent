@@ -1,0 +1,12 @@
+[
+  {
+    "shift_id": "shift_001",
+    "date": "2025-08-10",
+    "shift_type": "morning",
+    "location": "Pediatrics Ward",
+    "required_role": "nurse",
+    "required_specialty": "pediatrics",
+    "max_staff": 3,
+    "assigned_staff": ["456", "471"]
+  }
+]
