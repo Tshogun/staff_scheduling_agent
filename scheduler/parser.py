@@ -42,7 +42,7 @@ def validate_shifts(shifts: List[Dict[str, Any]]) -> None:
 
 
 def validate_constraints(constraints: Dict[str, Any]) -> None:
-   required_shift_keys = ["shift_types", "shift_times"]
+    required_shift_keys = ["shift_types", "shift_times"]
     required_hard_keys = ["max_hours_per_week", "max_shifts_per_week"]
 
     if "shift_config" not in constraints:
