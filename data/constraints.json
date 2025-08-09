@@ -1,5 +1,5 @@
 {
- "hard_constraints": {
+  "hard_constraints": {
     "max_hours_per_week": 40,
     "max_shifts_per_week": 5,
     "min_days_off_per_week": 1,
