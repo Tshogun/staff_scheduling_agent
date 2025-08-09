@@ -1,4 +1,4 @@
-# Data Loader & Validator Documentation
+# Parser file Documentation
 
 ## Overview
 This module handles:
@@ -9,21 +9,17 @@ This module handles:
 ---
 
 ## Directory Structure
-Expected directory layout:
+Expected directory layout:<br>
 
-project_root/
-│
-├── data/
-│   ├── staff.json
-│   ├── shifts.json
-│   └── constraints.json
-│
-├── src/
-│   └── data_loader.py   # this script
-│
-└── docs/
-    └── data_loader.md   # documentation
-
+project_root/<br>
+│<br>
+├── data/<br>
+│ ├── staff.json<br>
+│ ├── shifts.json<br>
+│ └── constraints.json<br>
+│<br>
+├── scheduler/<br>
+│ └── parser.py # this script<br>
 
 ---
 
