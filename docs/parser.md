@@ -234,11 +234,31 @@ staff, shifts, constraints = load_all_data()
 ```json
 [
   {
-    "id": "staff_001",
-    "name": "Alice",
+    "id": "SHN00001",
+    "name": "Alice Smith",
     "role": "nurse",
-    "skills": ["ICU", "pediatrics"],
-    "unavailable_days": ["2025-08-12"]
+    "skills": ["icu", "pediatrics"],
+    "max_hours_per_week": 40,
+    "preferred_shifts": ["morning"],
+    "unavailable_days": ["2025-08-10", "2025-08-13"],
+    "unavailable_shifts": ["2025-08-12_night"],
+    "vacation_dates": ["2025-08-15", "2025-08-16"],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-11",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-09",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
   }
 ]
 ```
@@ -247,16 +267,30 @@ staff, shifts, constraints = load_all_data()
 ```json
 [
   {
-    "id": "shift_01",
-    "date": "2025-08-12",
-    "shift_type": "morning",
+    "id": "20250814E",
+    "date": "2025-08-14",
+    "day_of_week": "Tuesday",
+    "shift_type": "Evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
     "required_roles": [
       {
         "role": "nurse",
+        "count": 6,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
         "count": 2,
-        "skills_required": ["ICU"]
+        "skills_required": ["surgery", "icu"]
       }
-    ]
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU must be fully staffed"
   }
 ]
 ```
