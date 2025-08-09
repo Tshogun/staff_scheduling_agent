@@ -1,4 +1,6 @@
-## Function: `generate_schedule()`
+## Solver Documentation
+
+### Function: `generate_schedule()`
 
 This function is the core of the scheduling system. It loads data, defines constraints and decision variables, sets an optimization objective, solves the model, and outputs the results.
 

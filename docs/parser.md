@@ -1,127 +1,295 @@
-# Parser file Documentation
+# Parser  Documentation
 
 ## Overview
-This module handles:
-- **Loading** `staff.json`, `shifts.json`, and `constraints.json` from the `data/` directory.  
-- **Validating** the structure and required fields of each dataset.  
-- **Returning** all three data sets as Python objects for use in the scheduling system.
+
+This module handles the loading and validation of all JSON-based input data used in the scheduling system:
+
+- `staff.json`
+- `shifts.json`
+- `constraints.json`
+
+It ensures that the files are present, correctly structured, and contain all required fields before passing them to the solver.
 
 ---
 
-## Directory Structure
+## Table of Contents
 
-Expected directory layout:<br>
-
-project_root/<br>
-│<br>
-├── data/<br>
-│ ├── staff.json<br>
-│ ├── shifts.json<br>
-│ └── constraints.json<br>
-│<br>
-├── scheduler/<br>
-│ └── parser.py # this script<br>
+- [Overview](#overview)
+- [Module Responsibilities](#module-responsibilities)
+- [Directory Setup](#directory-setup)
+- [Functions](#functions)
+  - [_load_json](#_load_json)
+  - [load_staff](#load_staff)
+  - [load_shifts](#load_shifts)
+  - [load_constraints](#load_constraints)
+  - [validate_staff](#validate_staff)
+  - [validate_shifts](#validate_shifts)
+  - [validate_constraints](#validate_constraints)
+  - [load_all_data](#load_all_data)
+- [Error Handling](#error-handling)
+- [Usage Example](#usage-example)
+- [File Structure Expectations](#file-structure-expectations)
 
 ---
 
-## Constants
-```
+## Module Responsibilities
+
+✔ Load JSON input files  
+✔ Validate file structure and schema  
+✔ Raise meaningful errors on invalid or missing data  
+✔ Provide a unified function to load all inputs together
+
+---
+
+## Directory Setup
+
+```python
 DATA_DIR = Path(__file__).parent.parent / "data"
 ```
-**Purpose:** Points to the `/data` directory at the root of the project.  
-**Used to:** Locate the JSON files (`staff.json`, `shifts.json`, `constraints.json`).
+
+- Points to the `data/` directory at the project root.
+- Assumes the following structure:
+
+```
+project_root/<br>
+├── data/<br>
+│   ├── staff.json<br>
+│   ├── shifts.json<br>
+│   └── constraints.json<br>
+└── scheduler/<br>
+    └── parser.py<br>
+```
 
 ---
 
 ## Functions
 
-### 1. Private Helper
-```
+---
+
+### 🧱 `_load_json(filename: str) → Any`
+
+```python
 def _load_json(filename: str) -> Any:
 ```
-**Purpose:** Loads a given JSON file from the `data/` directory.  
-**Raises:**  
-- `FileNotFoundError` → If the file does not exist.  
 
-✅ **Example**:
+- **Purpose**: Generic helper to load any JSON file from the `data/` directory.
+- **Raises**: `FileNotFoundError` if file doesn't exist.
+
+```python
+path = DATA_DIR / filename
+if not path.exists():
+    raise FileNotFoundError(...)
 ```
-staff_data = _load_json("staff.json")
-```
+
+- Opens and parses JSON safely using UTF-8 encoding.
 
 ---
 
-### 2. Loaders  
-Wrapper functions to load specific datasets:
+### 👥 `load_staff() → List[Dict[str, Any]]`
 
-```
+```python
 def load_staff() -> List[Dict[str, Any]]:
 ```
-- **Returns:** List of staff records from `staff.json`.
 
-```
+- Loads the `staff.json` file.
+- Each entry should contain:
+  - `"id"`: Unique staff ID
+  - `"name"`: Staff member's name
+  - `"role"`: Assigned job role
+  - (Optional: availability, preferences, etc.)
+
+---
+
+### 🕒 `load_shifts() → List[Dict[str, Any]]`
+
+```python
 def load_shifts() -> List[Dict[str, Any]]:
 ```
-- **Returns:** List of shift records from `shifts.json`.
 
-```
+- Loads the `shifts.json` file.
+- Each shift must contain:
+  - `"id"`: Unique shift ID
+  - `"date"`: Shift date
+  - `"required_roles"`: List of required roles (with counts and skills)
+
+---
+
+### ⚙️ `load_constraints() → Dict[str, Any]`
+
+```python
 def load_constraints() -> Dict[str, Any]:
 ```
-- **Returns:** Dictionary containing scheduling constraints from `constraints.json`.
+
+- Loads the `constraints.json` file.
+- Contains both **shift configuration** and **constraints**, such as:
+  - `shift_config`: Types, times, duration
+  - `hard_constraints`: Rules like max hours per week
+  - `soft_constraints`: Weights for optimization
 
 ---
 
-### 3. Validators  
-Check that each dataset contains the required fields.
+### ✅ `validate_staff(staff: List[Dict[str, Any]])`
 
-```
+```python
 def validate_staff(staff: List[Dict[str, Any]]) -> None:
 ```
-- Checks each staff entry for required keys: `"id"`, `"name"`, `"role"`.  
-- **Raises:** `AssertionError` if keys are missing.
 
-```
-def validate_shifts(shifts: List[Dict[str, Any]]) -> None:
-```
-- Checks each shift for keys: `"id"`, `"date"`, `"required_roles"`.  
-- **Raises:** `AssertionError` if incomplete.
+- Verifies that each staff entry includes the required fields:
+  - `"id"`, `"name"`, and `"role"`
 
+```python
+assert "id" in s and "name" in s and "role" in s
 ```
-def validate_constraints(constraints: Dict[str, Any]) -> None:
-```
-- Ensures:
-  - `shift_config` exists with `"shift_types"`, `"shift_times"`.
-  - `hard_constraints` exists with `"max_hours_per_week"`, `"max_shifts_per_week"`.
-- **Raises:** `ValueError` if any are missing.
+
+- Raises `AssertionError` if any are missing.
 
 ---
 
-### 4. Wrapper to Load All
+### ✅ `validate_shifts(shifts: List[Dict[str, Any]])`
+
+```python
+def validate_shifts(shifts: List[Dict[str, Any]]) -> None:
 ```
+
+- Ensures each shift has:
+  - `"id"`, `"date"`, and `"required_roles"`
+
+```python
+assert "id" in shift and "date" in shift and "required_roles" in shift
+```
+
+- Raises `AssertionError` if data is incomplete.
+
+---
+
+### ✅ `validate_constraints(constraints: Dict[str, Any])`
+
+```python
+def validate_constraints(constraints: Dict[str, Any]) -> None:
+```
+
+- Checks that `constraints.json` has all required sections and keys.
+
+**Required Sections:**
+- `shift_config`  
+- `hard_constraints`
+
+**Required Keys in `shift_config`:**
+- `"shift_types"`  
+- `"shift_times"`
+
+**Required Keys in `hard_constraints`:**
+- `"max_hours_per_week"`  
+- `"max_shifts_per_week"`
+
+Raises `ValueError` if any required section or key is missing.
+
+---
+
+### 🧩 `load_all_data() → Tuple[...]`
+
+```python
 def load_all_data():
 ```
-- Loads **staff**, **shifts**, and **constraints**.  
-- Runs the validators for each.  
-- **Returns:** `(staff, shifts, constraints)` tuple.
 
-✅ **Example Usage**:
+- Convenience wrapper to:
+  - Load all input files
+  - Run all validation checks
+- Returns:
+  - `staff`, `shifts`, `constraints` as Python objects (lists/dicts)
 
-staff, shifts, constraints = load_all_data()
-
+```python
+return staff, shifts, constraints
+```
 
 ---
 
 ## Error Handling
-| Error Type         | Trigger Condition                                   |
-|--------------------|-----------------------------------------------------|
-| `FileNotFoundError`| JSON file not found in `/data/`.                     |
-| `AssertionError`   | Missing required fields in staff or shifts.          |
-| `ValueError`       | Missing sections or keys in constraints file.        |
+
+| Error Type        | Trigger                                     |
+|------------------|---------------------------------------------|
+| `FileNotFoundError` | If any JSON file is missing in `/data/`     |
+| `AssertionError`  | If required fields are missing from data    |
+| `ValueError`      | If config structure is invalid or incomplete |
+
+All validation errors are designed to fail fast to prevent corrupted input from entering the solver.
 
 ---
 
-## Best Practices
-- Keep `staff.json`, `shifts.json`, and `constraints.json` **up to date** with the correct structure.
-- Run `load_all_data()` early in your program to ensure all data is valid before scheduling.
-- If you add new required fields, **update the validators**.
+## Usage Example
+
+```python
+from src.data_loader import load_all_data
+
+staff, shifts, constraints = load_all_data()
+```
+
+- You now have ready-to-use input data for the solver.
 
 ---
+
+## File Structure Expectations
+
+### staff.json (example)
+```json
+[
+  {
+    "id": "staff_001",
+    "name": "Alice",
+    "role": "nurse",
+    "skills": ["ICU", "pediatrics"],
+    "unavailable_days": ["2025-08-12"]
+  }
+]
+```
+
+### shifts.json (example)
+```json
+[
+  {
+    "id": "shift_01",
+    "date": "2025-08-12",
+    "shift_type": "morning",
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": ["ICU"]
+      }
+    ]
+  }
+]
+```
+
+### constraints.json (example)
+```json
+{
+  "shift_config": {
+    "shift_types": ["morning", "evening", "night"],
+    "shift_times": {
+      "morning": "08:00-16:00",
+      "evening": "16:00-00:00",
+      "night": "00:00-08:00"
+    },
+    "default_shift_duration_hours": 8
+  },
+  "hard_constraints": {
+    "max_hours_per_week": 40,
+    "max_shifts_per_week": 5
+  },
+  "soft_constraints": {
+    "weights": {
+      "understaffed_shift_penalty": 10,
+      "skill_mismatch_penalty": 5,
+      "preferred_shift_match": 2,
+      "overtime_penalty": 4,
+      "underscheduling_penalty": 3
+    }
+  }
+}
+```
+
+---
+
+> 📁 This module is critical to ensure the **solver receives clean, well-structured input**. It should be maintained alongside any changes to the data format or validation rules.
+
