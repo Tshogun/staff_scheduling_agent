@@ -46,8 +46,6 @@ All documentation files are located in the [`docs/`](./docs/) folder:
 
 ## ▶️ Getting Started
 
-## ▶️ Getting Started
-
 1. **Create and activate a virtual environment**
 
    ```bash
