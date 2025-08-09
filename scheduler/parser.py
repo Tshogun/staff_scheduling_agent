@@ -27,11 +27,9 @@ def load_shifts() -> List[Dict[str, Any]]:
 
 
 def load_constraints() -> Dict[str, Any]:
+# ===== Validators =====
     """Loads global scheduling constraints."""
     return _load_json("constraints.json")
-
-
-# ===== Optional Validators =====
 
 def validate_staff(staff: List[Dict[str, Any]]) -> None:
     for s in staff:
@@ -44,21 +42,28 @@ def validate_shifts(shifts: List[Dict[str, Any]]) -> None:
 
 
 def validate_constraints(constraints: Dict[str, Any]) -> None:
-    required_fields = [
-        "max_hours_per_week",
-        "max_shifts_per_week",
-        "shift_types",
-        "shift_times"
-    ]
-    for field in required_fields:
-        if field not in constraints:
-            raise ValueError(f"Missing required constraint: {field}")
+
+    required_shift_keys = ["shift_types", "shift_times"]
+    required_hard_keys = ["max_hours_per_week", "max_shifts_per_week"]
+
+    if "shift_config" not in constraints:
+        raise ValueError("Missing 'shift_config' section in constraints")
+    if "hard_constraints" not in constraints:
+        raise ValueError("Missing 'hard_constraints' section in constraints")
+
+    for key in required_shift_keys:
+        if key not in constraints["shift_config"]:
+            raise ValueError(f"Missing required shift config: {key}")
+    for key in required_hard_keys:
+        if key not in constraints["hard_constraints"]:
+            raise ValueError(f"Missing required hard constraint: {key}")
 
 
 # ===== Wrapper to Load All =====
 
 def load_all_data():
     """Convenience wrapper to load everything at once."""
+
     staff = load_staff()
     shifts = load_shifts()
     constraints = load_constraints()

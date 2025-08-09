@@ -36,7 +36,7 @@
     "required_roles": [
       {
         "role": "nurse",
-        "count": 4,
+        "count": 6,
         "skills_required": []
       },
       {
