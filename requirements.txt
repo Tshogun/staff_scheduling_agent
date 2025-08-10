@@ -2,3 +2,5 @@ ortools
 pandas
 streamlit
 protobuf
+flake8
+pytest
