@@ -2,15 +2,12 @@ import json
 from pathlib import Path
 from typing import Any
 
-# Define the base data directory
-DATA_DIR = Path(__file__).parent.parent / "data"
+DEFAULT_DATA_DIR = Path(__file__).parent.parent / "data"
 
 
-# Helper to load JSON file
-def _load_json(filename: str) -> Any:
-    path = DATA_DIR / filename
+def _load_json(path: Path) -> Any:
     if not path.exists():
-        raise FileNotFoundError(f"File '{filename}' not found in {DATA_DIR}")
+        raise FileNotFoundError(f"File '{path.name}' not found in {path.parent}")
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
@@ -18,20 +15,25 @@ def _load_json(filename: str) -> Any:
 # ===== Loaders =====
 
 
-def load_staff() -> list[dict[str, Any]]:
-    """Loads all staff definitions."""
-    return _load_json("staff.json")
+def load_staff(
+    data_dir: Path = DEFAULT_DATA_DIR, filename: str = "staff.json"
+) -> list[dict[str, Any]]:
+    return _load_json(data_dir / filename)
 
 
-def load_shifts() -> list[dict[str, Any]]:
-    """Loads all shift definitions."""
-    return _load_json("shifts.json")
+def load_shifts(
+    data_dir: Path = DEFAULT_DATA_DIR, filename: str = "shifts.json"
+) -> list[dict[str, Any]]:
+    return _load_json(data_dir / filename)
 
 
-def load_constraints() -> dict[str, Any]:
-    # ===== Validators =====
-    """Loads global scheduling constraints."""
-    return _load_json("constraints.json")
+def load_constraints(
+    data_dir: Path = DEFAULT_DATA_DIR, filename: str = "constraints.json"
+) -> dict[str, Any]:
+    return _load_json(data_dir / filename)
+
+
+# ===== Validators =====
 
 
 def validate_staff(staff: list[dict[str, Any]]) -> None:
@@ -68,11 +70,16 @@ def validate_constraints(constraints: dict[str, Any]) -> None:
 # ===== Wrapper to Load All =====
 
 
-def load_all_data():
-    """Convenience wrapper to load everything at once."""
-    staff = load_staff()
-    shifts = load_shifts()
-    constraints = load_constraints()
+def load_all_data(
+    data_dir: Path = DEFAULT_DATA_DIR,
+    staff_file: str = "staff.json",
+    shifts_file: str = "shifts.json",
+    constraints_file: str = "constraints.json",
+):
+    """Loads all data files, validates them, and returns them."""
+    staff = load_staff(data_dir, staff_file)
+    shifts = load_shifts(data_dir, shifts_file)
+    constraints = load_constraints(data_dir, constraints_file)
 
     validate_staff(staff)
     validate_shifts(shifts)
