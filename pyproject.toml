@@ -1,0 +1,27 @@
+[project]
+name = "staff_scheduling_agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[dependency-groups]
+dev = ["pytest-cov>=5.0.0", "pyright>=1.1.381"]
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.pyright]
+exclude = [".venv"]
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"

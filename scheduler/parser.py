@@ -1,47 +1,54 @@
 import json
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import Any
 
 # Define the base data directory
 DATA_DIR = Path(__file__).parent.parent / "data"
+
 
 # Helper to load JSON file
 def _load_json(filename: str) -> Any:
     path = DATA_DIR / filename
     if not path.exists():
         raise FileNotFoundError(f"File '{filename}' not found in {DATA_DIR}")
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
 # ===== Loaders =====
 
-def load_staff() -> List[Dict[str, Any]]:
+
+def load_staff() -> list[dict[str, Any]]:
     """Loads all staff definitions."""
     return _load_json("staff.json")
 
 
-def load_shifts() -> List[Dict[str, Any]]:
+def load_shifts() -> list[dict[str, Any]]:
     """Loads all shift definitions."""
     return _load_json("shifts.json")
 
 
-def load_constraints() -> Dict[str, Any]:
-# ===== Validators =====
+def load_constraints() -> dict[str, Any]:
+    # ===== Validators =====
     """Loads global scheduling constraints."""
     return _load_json("constraints.json")
 
-def validate_staff(staff: List[Dict[str, Any]]) -> None:
+
+def validate_staff(staff: list[dict[str, Any]]) -> None:
     for s in staff:
-        assert "id" in s and "name" in s and "role" in s, f"Missing required fields in staff: {s}"
+        assert "id" in s and "name" in s and "role" in s, (
+            f"Missing required fields in staff: {s}"
+        )
 
 
-def validate_shifts(shifts: List[Dict[str, Any]]) -> None:
+def validate_shifts(shifts: list[dict[str, Any]]) -> None:
     for shift in shifts:
-        assert "id" in shift and "date" in shift and "required_roles" in shift, f"Incomplete shift data: {shift}"
+        assert "id" in shift and "date" in shift and "required_roles" in shift, (
+            f"Incomplete shift data: {shift}"
+        )
 
 
-def validate_constraints(constraints: Dict[str, Any]) -> None:
+def validate_constraints(constraints: dict[str, Any]) -> None:
     required_shift_keys = ["shift_types", "shift_times"]
     required_hard_keys = ["max_hours_per_week", "max_shifts_per_week"]
 
@@ -59,6 +66,7 @@ def validate_constraints(constraints: Dict[str, Any]) -> None:
 
 
 # ===== Wrapper to Load All =====
+
 
 def load_all_data():
     """Convenience wrapper to load everything at once."""

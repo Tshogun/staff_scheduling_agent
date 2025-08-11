@@ -2,3 +2,10 @@ ortools
 pandas
 streamlit
 protobuf
+ruff
+pre-commit
+pyright
+black 
+mpy
+isort
+pytest
