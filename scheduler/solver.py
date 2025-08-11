@@ -1,12 +1,16 @@
-import logging
-from ortools.sat.python import cp_model
-from scheduler.parser import load_all_data
-from datetime import datetime
 import json
+import logging
+from datetime import datetime
 from pathlib import Path
 
+from ortools.sat.python import cp_model
+
+from scheduler.parser import load_all_data
+
 # Setup logging
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
 log = logging.getLogger(__name__)
 
 
@@ -18,20 +22,23 @@ def generate_schedule():
 
     hard_constraints = constraints_data["hard_constraints"]
     soft_constraints = constraints_data["soft_constraints"]["weights"]
-    shift_duration = constraints_data["shift_config"].get("default_shift_duration_hours", 8)
+    shift_duration = constraints_data["shift_config"].get(
+        "default_shift_duration_hours", 8
+    )
 
     model = cp_model.CpModel()
     solver = cp_model.CpSolver()
 
     staff_ids = [s["id"] for s in staff_list]
     shift_ids = [s["id"] for s in shift_list]
-    shift_by_id = {s["id"]: s for s in shift_list}
+    {s["id"]: s for s in shift_list}
 
     # Decision Variables
     log.info("Creating decision variables...")
     shift_assignments = {
         (s_id, sh_id): model.NewBoolVar(f"{s_id}_works_{sh_id}")
-        for s_id in staff_ids for sh_id in shift_ids
+        for s_id in staff_ids
+        for sh_id in shift_ids
     }
 
     # Objective terms for soft constraints
@@ -48,13 +55,16 @@ def generate_schedule():
             required_skills = role_req.get("skills_required", [])
 
             eligible_staff = [
-                s for s in staff_list
+                s
+                for s in staff_list
                 if s["role"] == role
                 and shift_date not in s.get("unavailable_days", [])
                 and shift_id not in s.get("unavailable_shifts", [])
             ]
             eligible_ids = [s["id"] for s in eligible_staff]
-            log.info(f"Shift {shift_id} requires {required_count} x {role}. Eligible: {eligible_ids}")
+            log.info(
+                f"Shift {shift_id} requires {required_count} x {role}. Eligible: {eligible_ids}"
+            )
 
             if not eligible_ids:
                 log.warning(f"No eligible staff for role '{role}' on shift {shift_id}.")
@@ -62,26 +72,37 @@ def generate_schedule():
 
             # Enforce minimum coverage using soft penalty if not enough eligible
             assigned = [shift_assignments[(s_id, shift_id)] for s_id in eligible_ids]
-            assigned_sum = model.NewIntVar(0, len(eligible_ids), f"{shift_id}_{role}_assigned")
+            assigned_sum = model.NewIntVar(
+                0, len(eligible_ids), f"{shift_id}_{role}_assigned"
+            )
             model.Add(assigned_sum == sum(assigned))
 
             shortage = model.NewIntVar(0, required_count, f"{shift_id}_{role}_shortage")
             model.Add(shortage == required_count - assigned_sum)
-            objective_terms.append(shortage * soft_constraints["understaffed_shift_penalty"])
+            objective_terms.append(
+                shortage * soft_constraints["understaffed_shift_penalty"]
+            )
 
             # Skill coverage
             for skill in required_skills:
                 staff_with_skill = [
                     shift_assignments[(s["id"], shift_id)]
-                    for s in eligible_staff if skill in s.get("skills", [])
+                    for s in eligible_staff
+                    if skill in s.get("skills", [])
                 ]
                 if staff_with_skill:
                     model.Add(sum(staff_with_skill) >= 1)
                 else:
-                    log.warning(f"No eligible {role} has skill '{skill}' for shift {shift_id}")
-                    penalty = model.NewIntVar(0, 1, f"{shift_id}_{role}_{skill}_mismatch")
+                    log.warning(
+                        f"No eligible {role} has skill '{skill}' for shift {shift_id}"
+                    )
+                    penalty = model.NewIntVar(
+                        0, 1, f"{shift_id}_{role}_{skill}_mismatch"
+                    )
                     model.Add(penalty == 1)
-                    objective_terms.append(penalty * soft_constraints["skill_mismatch_penalty"])
+                    objective_terms.append(
+                        penalty * soft_constraints["skill_mismatch_penalty"]
+                    )
 
     # One shift per day per staff
     log.info("Applying one-shift-per-day constraint...")
@@ -90,7 +111,7 @@ def generate_schedule():
         shifts_by_date = {}
         for sh in shift_list:
             shifts_by_date.setdefault(sh["date"], []).append(sh)
-        for date, shifts in shifts_by_date.items():
+        for _date, shifts in shifts_by_date.items():
             model.Add(sum(shift_assignments[(s_id, sh["id"])] for sh in shifts) <= 1)
 
     # Enforce unavailability
@@ -98,7 +119,9 @@ def generate_schedule():
     for s in staff_list:
         s_id = s["id"]
         for sh in shift_list:
-            if sh["date"] in s.get("unavailable_days", []) or sh["id"] in s.get("unavailable_shifts", []):
+            if sh["date"] in s.get("unavailable_days", []) or sh["id"] in s.get(
+                "unavailable_shifts", []
+            ):
                 model.Add(shift_assignments[(s_id, sh["id"])] == 0)
 
     # SOFT CONSTRAINTS
@@ -110,14 +133,16 @@ def generate_schedule():
         min_hours = s.get("min_hours_per_week", 0)
 
         total_hours = sum(
-            shift_duration * shift_assignments[(s_id, sh_id)]
-            for sh_id in shift_ids
+            shift_duration * shift_assignments[(s_id, sh_id)] for sh_id in shift_ids
         )
 
         # Preferred shift bonus
         for sh in shift_list:
             if sh["shift_type"] in preferred_shifts:
-                objective_terms.append(-soft_constraints["preferred_shift_match"] * shift_assignments[(s_id, sh["id"])])
+                objective_terms.append(
+                    -soft_constraints["preferred_shift_match"]
+                    * shift_assignments[(s_id, sh["id"])]
+                )
 
         # Overtime penalty
         overtime = model.NewIntVar(0, 1000, f"{s_id}_overtime")
@@ -129,7 +154,9 @@ def generate_schedule():
         underscheduled = model.NewIntVar(0, 1000, f"{s_id}_underscheduled")
         model.Add(min_hours - total_hours <= underscheduled)
         model.AddMaxEquality(underscheduled, [min_hours - total_hours, 0])
-        objective_terms.append(underscheduled * soft_constraints["underscheduling_penalty"])
+        objective_terms.append(
+            underscheduled * soft_constraints["underscheduling_penalty"]
+        )
 
     # Set Objective
     model.Minimize(sum(objective_terms))
@@ -147,7 +174,9 @@ def generate_schedule():
             for s in staff_list:
                 if solver.BooleanValue(shift_assignments[(s["id"], shift["id"])]):
                     assigned_staff.append(s["id"])
-                    log.info(f"Assigned {s['id']} to shift {shift['id']} ({shift['shift_type']})")
+                    log.info(
+                        f"Assigned {s['id']} to shift {shift['id']} ({shift['shift_type']})"
+                    )
             result.append({"shift_id": shift["id"], "staff_ids": assigned_staff})
 
         output_path = Path("output/assignments.json")
