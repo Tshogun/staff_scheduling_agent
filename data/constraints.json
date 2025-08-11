@@ -1,9 +1,9 @@
 {
   "hard_constraints": {
-    "max_hours_per_week": 40,
-    "max_shifts_per_week": 5,
+    "max_hours_per_week": 48,
+    "max_shifts_per_week": 6,
     "min_days_off_per_week": 1,
-    "max_consecutive_work_days": 5,
+    "max_consecutive_work_days": 6,
     "min_rest_hours_between_shifts": 12,
     "night_shift_limit_per_week": 2
   },
@@ -28,7 +28,8 @@
       "underscheduling_penalty": 7,
       "understaffed_shift_penalty": 20,
       "skill_mismatch_penalty": 10,
-      "overstaffed_shift_penalty": 5
+      "overstaffed_shift_penalty": 5,
+      "max_night_shifts_penalty": 8
     }
   }
 }

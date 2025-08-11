@@ -31,7 +31,6 @@ def generate_schedule():
 
     staff_ids = [s["id"] for s in staff_list]
     shift_ids = [s["id"] for s in shift_list]
-    {s["id"]: s for s in shift_list}
 
     # Decision Variables
     log.info("Creating decision variables...")
@@ -70,7 +69,6 @@ def generate_schedule():
                 log.warning(f"No eligible staff for role '{role}' on shift {shift_id}.")
                 continue
 
-            # Enforce minimum coverage using soft penalty if not enough eligible
             assigned = [shift_assignments[(s_id, shift_id)] for s_id in eligible_ids]
             assigned_sum = model.NewIntVar(
                 0, len(eligible_ids), f"{shift_id}_{role}_assigned"
@@ -156,6 +154,22 @@ def generate_schedule():
         model.AddMaxEquality(underscheduled, [min_hours - total_hours, 0])
         objective_terms.append(
             underscheduled * soft_constraints["underscheduling_penalty"]
+        )
+        
+        # Night shift soft limit
+        max_night_shifts = hard_constraints.get("night_shift_limit_per_week", 2)
+        night_shifts = [
+            shift_assignments[(s_id, sh["id"])]
+            for sh in shift_list
+            if sh["shift_type"] == "night"
+        ]
+        total_night_shifts = sum(night_shifts)
+
+        excess_night = model.NewIntVar(0, len(night_shifts), f"{s_id}_excess_night")
+        model.Add(total_night_shifts - max_night_shifts <= excess_night)
+        model.AddMaxEquality(excess_night, [total_night_shifts - max_night_shifts, 0])
+        objective_terms.append(
+            excess_night * soft_constraints["max_night_shifts_penalty"]
         )
 
     # Set Objective
