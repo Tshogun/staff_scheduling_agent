@@ -155,7 +155,7 @@ def generate_schedule():
         objective_terms.append(
             underscheduled * soft_constraints["underscheduling_penalty"]
         )
-
+        
         # Night shift soft limit
         max_night_shifts = hard_constraints.get("night_shift_limit_per_week", 2)
         night_shifts = [
