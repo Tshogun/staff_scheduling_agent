@@ -1,133 +1,148 @@
 [
   {
     "id": "SHN00001",
-    "name": "Alice Smith",
+    "name": "Liam Miller",
     "role": "nurse",
-    "skills": ["icu", "pediatrics"],
-    "max_hours_per_week": 40,
-    "preferred_shifts": ["morning"],
-    "unavailable_days": ["2025-08-10", "2025-08-13"],
-    "unavailable_shifts": ["2025-08-12_night"],
-    "vacation_dates": ["2025-08-15", "2025-08-16"],
-    "max_consecutive_days": 5,
-    "min_rest_hours": 12,
-    "night_shift_limit_per_week": 2,
-    "last_five_shifts": [
-      {
-        "date": "2025-08-11",
-        "shift_type": "morning",
-        "duration_hours": 8
-      },
-      {
-        "date": "2025-08-09",
-        "shift_type": "evening",
-        "duration_hours": 8
-      }
+    "skills": [
+      "emergency",
+      "maternity",
+      "pediatrics"
     ],
-    "seniority": 3
-  },
-  {
-    "id": "SHN00002",
-    "name": "Bob Johnson",
-    "role": "nurse",
-    "skills": ["general", "emergency"],
-    "max_hours_per_week": 36,
-    "preferred_shifts": ["afternoon", "evening"],
-    "unavailable_days": ["2025-08-14"],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-18",
+      "2025-08-16",
+      "2025-08-18"
+    ],
     "unavailable_shifts": [],
     "vacation_dates": [],
-    "max_consecutive_days": 6,
-    "min_rest_hours": 10,
-    "night_shift_limit_per_week": 3,
+    "max_consecutive_days": 5,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 1,
     "last_five_shifts": [
       {
         "date": "2025-08-10",
-        "shift_type": "afternoon",
+        "shift_type": "night",
         "duration_hours": 8
       },
       {
-        "date": "2025-08-08",
+        "date": "2025-08-04",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
         "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "morning",
         "duration_hours": 8
       }
     ],
     "seniority": 2
   },
   {
-    "id": "SHN00003",
-    "name": "Carol White",
-    "role": "nurse",
-    "skills": ["icu", "general"],
-    "max_hours_per_week": 40,
-    "preferred_shifts": ["morning", "late"],
-    "unavailable_days": ["2025-08-12"],
-    "unavailable_shifts": ["2025-08-12_evening"],
-    "vacation_dates": ["2025-08-20"],
-    "max_consecutive_days": 4,
-    "min_rest_hours": 12,
-    "night_shift_limit_per_week": 1,
-    "last_five_shifts": [
-      {
-        "date": "2025-08-11",
-        "shift_type": "late",
-        "duration_hours": 8
-      },
-      {
-        "date": "2025-08-07",
-        "shift_type": "morning",
-        "duration_hours": 8
-      }
-    ],
-    "seniority": 4
-  },
-  {
-    "id": "SHD00001",
-    "name": "Dr. David Green",
+    "id": "SHD00002",
+    "name": "Carol Lewis",
     "role": "doctor",
-    "skills": ["surgery", "emergency"],
-    "max_hours_per_week": 50,
-    "preferred_shifts": ["afternoon"],
+    "skills": [
+      "general"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "night",
+      "late"
+    ],
     "unavailable_days": [],
-    "unavailable_shifts": ["2025-08-12_morning"],
-    "vacation_dates": ["2025-08-18", "2025-08-19"],
+    "unavailable_shifts": [
+      "2025-08-25_night"
+    ],
+    "vacation_dates": [],
     "max_consecutive_days": 7,
     "min_rest_hours": 12,
     "night_shift_limit_per_week": 2,
     "last_five_shifts": [
       {
-        "date": "2025-08-11",
-        "shift_type": "afternoon",
+        "date": "2025-08-09",
+        "shift_type": "evening",
         "duration_hours": 8
       },
       {
-        "date": "2025-08-09",
-        "shift_type": "morning",
-        "duration_hours": 8
-      }
-    ],
-    "seniority": 5
-  },
-  {
-    "id": "SHD00002",
-    "name": "Dr. Emily Brown",
-    "role": "doctor",
-    "skills": ["icu"],
-    "max_hours_per_week": 45,
-    "preferred_shifts": ["morning", "late"],
-    "unavailable_days": ["2025-08-13"],
-    "unavailable_shifts": ["2025-08-12_night"],
-    "vacation_dates": [],
-    "max_consecutive_days": 5,
-    "min_rest_hours": 12,
-    "night_shift_limit_per_week": 1,
-    "last_five_shifts": [
-      {
-        "date": "2025-08-10",
-        "shift_type": "morning",
+        "date": "2025-08-03",
+        "shift_type": "evening",
         "duration_hours": 8
       },
       {
         "date": "2025-08-08",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHN00003",
+    "name": "Ella Hall",
+    "role": "nurse",
+    "skills": [
+      "icu",
+      "pediatrics",
+      "surgery"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "morning"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-18_afternoon",
+      "2025-08-18_night"
+    ],
+    "vacation_dates": [
+      "2025-08-29",
+      "2025-08-23"
+    ],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-11",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
         "shift_type": "late",
         "duration_hours": 8
       }
@@ -135,81 +150,87 @@
     "seniority": 4
   },
   {
-    "id": "SHD00003",
-    "name": "Dr. Frank Miller",
+    "id": "SHD00004",
+    "name": "Lucas Adams",
     "role": "doctor",
-    "skills": ["surgery"],
-    "max_hours_per_week": 40,
-    "preferred_shifts": ["night"],
-    "unavailable_days": ["2025-08-14"],
-    "unavailable_shifts": [],
-    "vacation_dates": ["2025-08-21"],
-    "max_consecutive_days": 6,
+    "skills": [
+      "general"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "late",
+      "afternoon"
+    ],
+    "unavailable_days": [
+      "2025-08-19"
+    ],
+    "unavailable_shifts": [
+      "2025-08-18_late"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
     "min_rest_hours": 10,
     "night_shift_limit_per_week": 3,
     "last_five_shifts": [
       {
-        "date": "2025-08-09",
+        "date": "2025-08-10",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00005",
+    "name": "Lucas King",
+    "role": "doctor",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "night",
+      "afternoon",
+      "evening"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-24_evening",
+      "2025-08-23_morning"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
         "shift_type": "night",
         "duration_hours": 8
       },
       {
         "date": "2025-08-07",
-        "shift_type": "evening",
-        "duration_hours": 8
-      }
-    ],
-    "seniority": 3
-  },
-  {
-    "id": "SHN00004",
-    "name": "Nina Patel",
-    "role": "nurse",
-    "skills": ["icu", "emergency"],
-    "max_hours_per_week": 36,
-    "preferred_shifts": ["morning"],
-    "unavailable_days": ["2025-08-14"],
-    "unavailable_shifts": [],
-    "vacation_dates": [],
-    "max_consecutive_days": 5,
-    "min_rest_hours": 12,
-    "night_shift_limit_per_week": 2,
-    "last_five_shifts": [
-      {
-        "date": "2025-08-11",
-        "shift_type": "morning",
-        "duration_hours": 8
-      },
-      {
-        "date": "2025-08-10",
-        "shift_type": "evening",
-        "duration_hours": 8
-      }
-    ],
-    "seniority": 3
-  },
-  {
-    "id": "SHN00005",
-    "name": "Liam Johnson",
-    "role": "nurse",
-    "skills": ["general", "pediatrics"],
-    "max_hours_per_week": 40,
-    "preferred_shifts": ["evening", "late"],
-    "unavailable_days": ["2025-08-15"],
-    "unavailable_shifts": ["2025-08-12_morning"],
-    "vacation_dates": ["2025-08-20"],
-    "max_consecutive_days": 6,
-    "min_rest_hours": 10,
-    "night_shift_limit_per_week": 1,
-    "last_five_shifts": [
-      {
-        "date": "2025-08-09",
         "shift_type": "late",
         "duration_hours": 8
       },
       {
-        "date": "2025-08-08",
+        "date": "2025-08-06",
         "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "afternoon",
         "duration_hours": 8
       }
     ],
@@ -217,45 +238,550 @@
   },
   {
     "id": "SHN00006",
-    "name": "Sofia Garcia",
+    "name": "Carol Nguyen",
     "role": "nurse",
-    "skills": ["icu", "surgery"],
-    "max_hours_per_week": 32,
-    "preferred_shifts": ["morning"],
-    "unavailable_days": [],
-    "unavailable_shifts": ["2025-08-12_evening"],
-    "vacation_dates": ["2025-08-22"],
-    "max_consecutive_days": 4,
+    "skills": [
+      "pediatrics",
+      "general",
+      "surgery"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "afternoon",
+      "late"
+    ],
+    "unavailable_days": [
+      "2025-08-16",
+      "2025-08-21"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [
+      "2025-08-28"
+    ],
+    "max_consecutive_days": 5,
     "min_rest_hours": 12,
     "night_shift_limit_per_week": 2,
     "last_five_shifts": [
       {
-        "date": "2025-08-10",
+        "date": "2025-08-12",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHD00007",
+    "name": "Benjamin Young",
+    "role": "doctor",
+    "skills": [
+      "pediatrics"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "late",
+      "night",
+      "afternoon"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-11",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
         "shift_type": "morning",
         "duration_hours": 8
       },
       {
-        "date": "2025-08-07",
-        "shift_type": "morning",
+        "date": "2025-08-05",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "late",
         "duration_hours": 8
       }
     ],
-    "seniority": 4
+    "seniority": 5
   },
   {
-    "id": "SHN00007",
-    "name": "Ethan Lee",
-    "role": "nurse",
-    "skills": ["emergency", "general"],
+    "id": "SHD00008",
+    "name": "Grace Green",
+    "role": "doctor",
+    "skills": [
+      "general"
+    ],
     "max_hours_per_week": 38,
-    "preferred_shifts": ["afternoon", "night"],
-    "unavailable_days": ["2025-08-11"],
-    "unavailable_shifts": [],
+    "preferred_shifts": [
+      "late",
+      "evening",
+      "morning"
+    ],
+    "unavailable_days": [
+      "2025-08-16",
+      "2025-08-25",
+      "2025-08-17"
+    ],
+    "unavailable_shifts": [
+      "2025-08-17_evening"
+    ],
     "vacation_dates": [],
     "max_consecutive_days": 5,
     "min_rest_hours": 11,
     "night_shift_limit_per_week": 3,
     "last_five_shifts": [
+      {
+        "date": "2025-08-11",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00009",
+    "name": "Grace Lee",
+    "role": "doctor",
+    "skills": [
+      "emergency",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 36,
+    "preferred_shifts": [
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-14",
+      "2025-08-21"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [],
+    "seniority": 2
+  },
+  {
+    "id": "SHN00010",
+    "name": "Liam Scott",
+    "role": "nurse",
+    "skills": [
+      "pediatrics",
+      "general",
+      "maternity"
+    ],
+    "max_hours_per_week": 36,
+    "preferred_shifts": [
+      "late",
+      "morning",
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-13",
+      "2025-08-25"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [],
+    "seniority": 3
+  },
+  {
+    "id": "SHN00011",
+    "name": "Olivia Young",
+    "role": "nurse",
+    "skills": [
+      "emergency",
+      "pediatrics",
+      "surgery"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "night",
+      "evening",
+      "morning"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-07",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00012",
+    "name": "Ella Green",
+    "role": "doctor",
+    "skills": [
+      "surgery",
+      "general",
+      "emergency"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "morning",
+      "night"
+    ],
+    "unavailable_days": [
+      "2025-08-13",
+      "2025-08-21"
+    ],
+    "unavailable_shifts": [
+      "2025-08-22_late"
+    ],
+    "vacation_dates": [
+      "2025-08-23",
+      "2025-08-14"
+    ],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-09",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHD00013",
+    "name": "Mia Allen",
+    "role": "doctor",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "morning",
+      "afternoon"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-10",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-09",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00014",
+    "name": "Carol Adams",
+    "role": "doctor",
+    "skills": [
+      "maternity",
+      "surgery",
+      "general"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "late",
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-25_night"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-05",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-09",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHN00015",
+    "name": "Grace Brown",
+    "role": "nurse",
+    "skills": [
+      "maternity",
+      "emergency"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-19_afternoon",
+      "2025-08-17_night"
+    ],
+    "vacation_dates": [
+      "2025-08-15",
+      "2025-08-31"
+    ],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-04",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00016",
+    "name": "Mason Lee",
+    "role": "doctor",
+    "skills": [
+      "emergency",
+      "general",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-09",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHN00017",
+    "name": "Daniel Wright",
+    "role": "nurse",
+    "skills": [
+      "maternity",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "late",
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-13_afternoon"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHN00018",
+    "name": "Matthew Green",
+    "role": "nurse",
+    "skills": [
+      "general",
+      "emergency",
+      "surgery"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "late"
+    ],
+    "unavailable_days": [
+      "2025-08-21",
+      "2025-08-13",
+      "2025-08-25"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHN00019",
+    "name": "James Green",
+    "role": "nurse",
+    "skills": [
+      "emergency",
+      "icu",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "late",
+      "afternoon"
+    ],
+    "unavailable_days": [
+      "2025-08-17",
+      "2025-08-14"
+    ],
+    "unavailable_shifts": [
+      "2025-08-26_night"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-08",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
       {
         "date": "2025-08-09",
         "shift_type": "night",
@@ -263,6 +789,703 @@
       },
       {
         "date": "2025-08-08",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
+  },
+  {
+    "id": "SHD00020",
+    "name": "Alice Baker",
+    "role": "doctor",
+    "skills": [
+      "surgery",
+      "maternity",
+      "icu"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "late",
+      "morning",
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-15",
+      "2025-08-18",
+      "2025-08-13"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-07",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-07",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHN00021",
+    "name": "Henry Young",
+    "role": "nurse",
+    "skills": [
+      "pediatrics",
+      "surgery"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "evening",
+      "night",
+      "afternoon"
+    ],
+    "unavailable_days": [
+      "2025-08-26",
+      "2025-08-20",
+      "2025-08-16"
+    ],
+    "unavailable_shifts": [
+      "2025-08-21_evening"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-05",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00022",
+    "name": "Carol King",
+    "role": "doctor",
+    "skills": [
+      "surgery",
+      "maternity"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "night",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-09",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00023",
+    "name": "Liam White",
+    "role": "doctor",
+    "skills": [
+      "emergency",
+      "maternity"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "night",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-25_morning"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [],
+    "seniority": 2
+  },
+  {
+    "id": "SHN00024",
+    "name": "James Patel",
+    "role": "nurse",
+    "skills": [
+      "icu"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-07",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHN00025",
+    "name": "Emily Brown",
+    "role": "nurse",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "afternoon",
+      "night"
+    ],
+    "unavailable_days": [
+      "2025-08-24",
+      "2025-08-25"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00026",
+    "name": "Benjamin Smith",
+    "role": "doctor",
+    "skills": [
+      "general",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 50,
+    "preferred_shifts": [
+      "night",
+      "morning",
+      "afternoon"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-10",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-04",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00027",
+    "name": "Matthew Wright",
+    "role": "doctor",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 50,
+    "preferred_shifts": [
+      "morning"
+    ],
+    "unavailable_days": [
+      "2025-08-19",
+      "2025-08-21",
+      "2025-08-24"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-06",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
+  },
+  {
+    "id": "SHN00028",
+    "name": "Frank Wright",
+    "role": "nurse",
+    "skills": [
+      "icu"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-25"
+    ],
+    "unavailable_shifts": [
+      "2025-08-21_afternoon"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHN00029",
+    "name": "Matthew Patel",
+    "role": "nurse",
+    "skills": [
+      "general",
+      "emergency",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "morning"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [],
+    "seniority": 2
+  },
+  {
+    "id": "SHD00030",
+    "name": "David Scott",
+    "role": "doctor",
+    "skills": [
+      "surgery",
+      "icu"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "night",
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-22",
+      "2025-08-14",
+      "2025-08-24"
+    ],
+    "unavailable_shifts": [
+      "2025-08-18_night"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHN00031",
+    "name": "Ella Young",
+    "role": "nurse",
+    "skills": [
+      "surgery"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "late",
+      "morning",
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-26",
+      "2025-08-20"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-10",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00032",
+    "name": "Matthew Miller",
+    "role": "doctor",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "late",
+      "morning",
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [
+      "2025-08-29",
+      "2025-08-18"
+    ],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-04",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
+  },
+  {
+    "id": "SHN00033",
+    "name": "Frank Hall",
+    "role": "nurse",
+    "skills": [
+      "general"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "late",
+      "evening"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-13_night",
+      "2025-08-13_afternoon"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-09",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHN00034",
+    "name": "Daniel Smith",
+    "role": "nurse",
+    "skills": [
+      "surgery",
+      "emergency",
+      "maternity"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "evening"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-08",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-07",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00035",
+    "name": "Charlotte Nguyen",
+    "role": "doctor",
+    "skills": [
+      "icu",
+      "general"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "late",
+      "morning"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-11",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHN00036",
+    "name": "Frank Clark",
+    "role": "nurse",
+    "skills": [
+      "general",
+      "pediatrics",
+      "emergency"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "evening",
+      "late",
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-07",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHN00037",
+    "name": "Lucas Green",
+    "role": "nurse",
+    "skills": [
+      "general",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "morning",
+      "afternoon",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-08",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00038",
+    "name": "Charlotte Young",
+    "role": "doctor",
+    "skills": [
+      "general",
+      "icu"
+    ],
+    "max_hours_per_week": 50,
+    "preferred_shifts": [
+      "morning",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-16_evening",
+      "2025-08-22_afternoon"
+    ],
+    "vacation_dates": [
+      "2025-08-26",
+      "2025-08-13"
+    ],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-07",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
         "shift_type": "afternoon",
         "duration_hours": 8
       }
@@ -270,30 +1493,623 @@
     "seniority": 2
   },
   {
-    "id": "SHN00008",
-    "name": "Grace Nguyen",
+    "id": "SHN00039",
+    "name": "Isabella Allen",
     "role": "nurse",
-    "skills": ["icu", "general", "pediatrics"],
-    "max_hours_per_week": 40,
-    "preferred_shifts": ["morning", "evening"],
-    "unavailable_days": ["2025-08-13"],
-    "unavailable_shifts": ["2025-08-12_night"],
-    "vacation_dates": ["2025-08-19"],
-    "max_consecutive_days": 6,
-    "min_rest_hours": 12,
+    "skills": [
+      "surgery"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "evening",
+      "morning",
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 11,
     "night_shift_limit_per_week": 2,
     "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00040",
+    "name": "Isabella Wright",
+    "role": "doctor",
+    "skills": [
+      "maternity"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "late"
+    ],
+    "unavailable_days": [
+      "2025-08-21",
+      "2025-08-17"
+    ],
+    "unavailable_shifts": [
+      "2025-08-20_evening"
+    ],
+    "vacation_dates": [
+      "2025-08-16",
+      "2025-08-21",
+      "2025-08-23"
+    ],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-10",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-10",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHD00041",
+    "name": "Chloe Miller",
+    "role": "doctor",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "morning",
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-13",
+      "2025-08-26",
+      "2025-08-16"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [
+      "2025-08-17"
+    ],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-09",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 5
+  },
+  {
+    "id": "SHD00042",
+    "name": "Hannah Nguyen",
+    "role": "doctor",
+    "skills": [
+      "emergency",
+      "pediatrics",
+      "general"
+    ],
+    "max_hours_per_week": 50,
+    "preferred_shifts": [
+      "late",
+      "afternoon",
+      "morning"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
+  },
+  {
+    "id": "SHN00043",
+    "name": "Sofia Garcia",
+    "role": "nurse",
+    "skills": [
+      "pediatrics",
+      "general",
+      "maternity"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "morning",
+      "evening"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [
+      "2025-08-17_late"
+    ],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-06",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
+  },
+  {
+    "id": "SHD00044",
+    "name": "James Green",
+    "role": "doctor",
+    "skills": [
+      "maternity",
+      "icu",
+      "emergency"
+    ],
+    "max_hours_per_week": 40,
+    "preferred_shifts": [
+      "night"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-10",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00045",
+    "name": "Nina Smith",
+    "role": "doctor",
+    "skills": [
+      "emergency",
+      "general"
+    ],
+    "max_hours_per_week": 45,
+    "preferred_shifts": [
+      "night",
+      "morning"
+    ],
+    "unavailable_days": [
+      "2025-08-14"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [
+      "2025-08-14",
+      "2025-08-17"
+    ],
+    "max_consecutive_days": 4,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-12",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-11",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 2
+  },
+  {
+    "id": "SHD00046",
+    "name": "Isabella Garcia",
+    "role": "doctor",
+    "skills": [
+      "general",
+      "icu",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "night",
+      "evening",
+      "afternoon"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-08",
+        "shift_type": "evening",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00047",
+    "name": "Nina Lee",
+    "role": "doctor",
+    "skills": [
+      "emergency",
+      "icu"
+    ],
+    "max_hours_per_week": 38,
+    "preferred_shifts": [
+      "evening",
+      "night",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-03",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-07",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHN00048",
+    "name": "Olivia Garcia",
+    "role": "nurse",
+    "skills": [
+      "emergency",
+      "surgery",
+      "maternity"
+    ],
+    "max_hours_per_week": 36,
+    "preferred_shifts": [
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-04",
+        "shift_type": "evening",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-12",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-08",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-06",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00049",
+    "name": "Ethan Miller",
+    "role": "doctor",
+    "skills": [
+      "pediatrics"
+    ],
+    "max_hours_per_week": 50,
+    "preferred_shifts": [
+      "afternoon",
+      "evening"
+    ],
+    "unavailable_days": [
+      "2025-08-18",
+      "2025-08-19"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [
+      "2025-08-26",
+      "2025-08-23",
+      "2025-08-30"
+    ],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-08",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00050",
+    "name": "James Wright",
+    "role": "doctor",
+    "skills": [
+      "emergency"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "evening",
+      "night",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [
+      "2025-08-28",
+      "2025-08-21"
+    ],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-08",
+        "shift_type": "late",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00051",
+    "name": "Jack Lee",
+    "role": "doctor",
+    "skills": [
+      "surgery"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "night",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 6,
+    "min_rest_hours": 10,
+    "night_shift_limit_per_week": 3,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-09",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
       {
         "date": "2025-08-10",
         "shift_type": "evening",
         "duration_hours": 8
       },
       {
-        "date": "2025-08-08",
+        "date": "2025-08-03",
+        "shift_type": "morning",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-04",
         "shift_type": "morning",
         "duration_hours": 8
       }
     ],
-    "seniority": 5
+    "seniority": 4
+  },
+  {
+    "id": "SHD00052",
+    "name": "Chloe Hall",
+    "role": "doctor",
+    "skills": [
+      "surgery",
+      "icu",
+      "maternity"
+    ],
+    "max_hours_per_week": 32,
+    "preferred_shifts": [
+      "late"
+    ],
+    "unavailable_days": [
+      "2025-08-17",
+      "2025-08-24",
+      "2025-08-21"
+    ],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [],
+    "seniority": 4
+  },
+  {
+    "id": "SHN00053",
+    "name": "James Clark",
+    "role": "nurse",
+    "skills": [
+      "surgery"
+    ],
+    "max_hours_per_week": 36,
+    "preferred_shifts": [
+      "afternoon"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 7,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 2,
+    "last_five_shifts": [],
+    "seniority": 1
+  },
+  {
+    "id": "SHD00054",
+    "name": "Mia Young",
+    "role": "doctor",
+    "skills": [
+      "maternity",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 36,
+    "preferred_shifts": [
+      "evening",
+      "afternoon"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 11,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-06",
+        "shift_type": "night",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-05",
+        "shift_type": "afternoon",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-03",
+        "shift_type": "late",
+        "duration_hours": 8
+      },
+      {
+        "date": "2025-08-04",
+        "shift_type": "morning",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 4
+  },
+  {
+    "id": "SHD00055",
+    "name": "Charlotte Wright",
+    "role": "doctor",
+    "skills": [
+      "general",
+      "maternity",
+      "pediatrics"
+    ],
+    "max_hours_per_week": 50,
+    "preferred_shifts": [
+      "night",
+      "late"
+    ],
+    "unavailable_days": [],
+    "unavailable_shifts": [],
+    "vacation_dates": [],
+    "max_consecutive_days": 5,
+    "min_rest_hours": 12,
+    "night_shift_limit_per_week": 1,
+    "last_five_shifts": [
+      {
+        "date": "2025-08-10",
+        "shift_type": "night",
+        "duration_hours": 8
+      }
+    ],
+    "seniority": 3
   }
 ]
