@@ -1,23 +1,379 @@
 [
   {
-    "shift_id": "20250812M",
+    "shift_id": "20250813M",
     "staff_ids": [
-      "SHD00001",
-      "SHN00004",
-      "SHN00006"
+      "SHD00027",
+      "SHN00039"
+    ]
+  },
+  {
+    "shift_id": "20250813E",
+    "staff_ids": [
+      "SHD00049"
+    ]
+  },
+  {
+    "shift_id": "20250813N",
+    "staff_ids": [
+      "SHD00022"
+    ]
+  },
+  {
+    "shift_id": "20250814M",
+    "staff_ids": [
+      "SHN00003",
+      "SHN00010",
+      "SHN00029",
+      "SHN00031",
+      "SHD00038",
+      "SHD00042"
     ]
   },
   {
     "shift_id": "20250814E",
     "staff_ids": [
+      "SHD00008",
+      "SHN00011",
+      "SHN00021",
+      "SHN00039",
+      "SHN00043",
+      "SHD00049"
+    ]
+  },
+  {
+    "shift_id": "20250814N",
+    "staff_ids": [
+      "SHN00024",
+      "SHD00046",
+      "SHD00047",
+      "SHN00048",
+      "SHN00053"
+    ]
+  },
+  {
+    "shift_id": "20250815M",
+    "staff_ids": [
+      "SHD00035"
+    ]
+  },
+  {
+    "shift_id": "20250815E",
+    "staff_ids": [
       "SHN00001",
+      "SHN00017",
+      "SHN00021",
+      "SHN00028",
+      "SHN00048",
+      "SHD00050"
+    ]
+  },
+  {
+    "shift_id": "20250815N",
+    "staff_ids": [
+      "SHD00055"
+    ]
+  },
+  {
+    "shift_id": "20250816M",
+    "staff_ids": [
       "SHN00003",
-      "SHD00001",
-      "SHD00002",
-      "SHN00005",
+      "SHD00012",
+      "SHD00013",
+      "SHN00029",
+      "SHN00037"
+    ]
+  },
+  {
+    "shift_id": "20250816E",
+    "staff_ids": [
+      "SHN00011",
+      "SHN00033",
+      "SHN00034",
+      "SHN00036",
+      "SHN00039",
+      "SHD00046",
+      "SHD00049"
+    ]
+  },
+  {
+    "shift_id": "20250816N",
+    "staff_ids": [
+      "SHN00018",
+      "SHD00026",
+      "SHD00050"
+    ]
+  },
+  {
+    "shift_id": "20250817M",
+    "staff_ids": [
+      "SHN00018",
+      "SHN00024",
+      "SHN00031",
+      "SHD00035"
+    ]
+  },
+  {
+    "shift_id": "20250817E",
+    "staff_ids": [
+      "SHN00010",
+      "SHN00021",
+      "SHN00033",
+      "SHD00050"
+    ]
+  },
+  {
+    "shift_id": "20250817N",
+    "staff_ids": [
+      "SHN00025",
+      "SHD00026"
+    ]
+  },
+  {
+    "shift_id": "20250818M",
+    "staff_ids": [
+      "SHN00010",
+      "SHD00012",
+      "SHD00041"
+    ]
+  },
+  {
+    "shift_id": "20250818E",
+    "staff_ids": [
+      "SHD00008",
+      "SHD00009",
+      "SHN00011",
+      "SHN00028"
+    ]
+  },
+  {
+    "shift_id": "20250818N",
+    "staff_ids": [
       "SHN00006",
-      "SHN00007",
-      "SHN00008"
+      "SHN00018",
+      "SHD00045",
+      "SHD00046"
+    ]
+  },
+  {
+    "shift_id": "20250819M",
+    "staff_ids": [
+      "SHN00006",
+      "SHN00019",
+      "SHN00037",
+      "SHD00041",
+      "SHN00043",
+      "SHN00053"
+    ]
+  },
+  {
+    "shift_id": "20250819E",
+    "staff_ids": [
+      "SHN00017",
+      "SHN00025",
+      "SHN00031",
+      "SHN00033",
+      "SHN00034",
+      "SHD00047"
+    ]
+  },
+  {
+    "shift_id": "20250819N",
+    "staff_ids": [
+      "SHN00036",
+      "SHD00044"
+    ]
+  },
+  {
+    "shift_id": "20250820M",
+    "staff_ids": [
+      "SHN00003",
+      "SHN00018",
+      "SHD00035",
+      "SHD00038",
+      "SHN00039",
+      "SHN00048"
+    ]
+  },
+  {
+    "shift_id": "20250820E",
+    "staff_ids": [
+      "SHN00001",
+      "SHN00028",
+      "SHN00034",
+      "SHN00036",
+      "SHD00049",
+      "SHD00054"
+    ]
+  },
+  {
+    "shift_id": "20250820N",
+    "staff_ids": [
+      "SHD00002",
+      "SHD00007",
+      "SHN00017",
+      "SHN00019"
+    ]
+  },
+  {
+    "shift_id": "20250821M",
+    "staff_ids": [
+      "SHN00003",
+      "SHN00015",
+      "SHD00035",
+      "SHN00043"
+    ]
+  },
+  {
+    "shift_id": "20250821E",
+    "staff_ids": [
+      "SHD00005",
+      "SHN00025",
+      "SHN00033",
+      "SHN00053"
+    ]
+  },
+  {
+    "shift_id": "20250821N",
+    "staff_ids": [
+      "SHD00055"
+    ]
+  },
+  {
+    "shift_id": "20250822M",
+    "staff_ids": [
+      "SHN00019",
+      "SHN00024",
+      "SHN00037",
+      "SHD00041",
+      "SHD00045"
+    ]
+  },
+  {
+    "shift_id": "20250822E",
+    "staff_ids": [
+      "SHN00001",
+      "SHD00005",
+      "SHN00011",
+      "SHN00028",
+      "SHN00033",
+      "SHD00047"
+    ]
+  },
+  {
+    "shift_id": "20250822N",
+    "staff_ids": [
+      "SHN00006",
+      "SHD00022",
+      "SHD00044",
+      "SHN00048"
+    ]
+  },
+  {
+    "shift_id": "20250823M",
+    "staff_ids": [
+      "SHN00003",
+      "SHN00029",
+      "SHN00037",
+      "SHD00041"
+    ]
+  },
+  {
+    "shift_id": "20250823E",
+    "staff_ids": [
+      "SHN00001",
+      "SHN00015",
+      "SHN00028",
+      "SHN00031",
+      "SHN00034",
+      "SHD00050"
+    ]
+  },
+  {
+    "shift_id": "20250823N",
+    "staff_ids": [
+      "SHN00021",
+      "SHN00025",
+      "SHD00051"
+    ]
+  },
+  {
+    "shift_id": "20250824M",
+    "staff_ids": [
+      "SHN00010",
+      "SHD00012",
+      "SHN00029",
+      "SHN00031",
+      "SHD00032"
+    ]
+  },
+  {
+    "shift_id": "20250824E",
+    "staff_ids": [
+      "SHN00001",
+      "SHD00008",
+      "SHN00015",
+      "SHN00034",
+      "SHD00041"
+    ]
+  },
+  {
+    "shift_id": "20250824N",
+    "staff_ids": [
+      "SHD00007",
+      "SHN00017",
+      "SHN00021",
+      "SHD00023",
+      "SHN00024",
+      "SHN00036"
+    ]
+  },
+  {
+    "shift_id": "20250825M",
+    "staff_ids": [
+      "SHD00020"
+    ]
+  },
+  {
+    "shift_id": "20250825E",
+    "staff_ids": [
+      "SHN00006",
+      "SHD00009",
+      "SHN00017",
+      "SHN00019"
+    ]
+  },
+  {
+    "shift_id": "20250825N",
+    "staff_ids": [
+      "SHN00011",
+      "SHD00051"
+    ]
+  },
+  {
+    "shift_id": "20250826M",
+    "staff_ids": [
+      "SHD00008",
+      "SHD00027",
+      "SHN00037"
+    ]
+  },
+  {
+    "shift_id": "20250826E",
+    "staff_ids": [
+      "SHN00015",
+      "SHN00025",
+      "SHN00043",
+      "SHD00046",
+      "SHD00049"
+    ]
+  },
+  {
+    "shift_id": "20250826N",
+    "staff_ids": [
+      "SHD00012",
+      "SHN00019",
+      "SHD00047",
+      "SHN00053"
     ]
   }
 ]

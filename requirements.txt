@@ -9,3 +9,5 @@ black
 mpy
 isort
 pytest
+plotly 
+dash

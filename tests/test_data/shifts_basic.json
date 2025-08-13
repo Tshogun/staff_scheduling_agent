@@ -1,7 +1,507 @@
 [
   {
-    "id": "20250812M",
+    "id": "20250813M",
     "date": "2025-08-13",
+    "day_of_week": "Wednesday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing A",
+
+    "notes": "ICU coverage for morning shift"
+  },
+  {
+    "id": "20250813E",
+    "date": "2025-08-13",
+    "day_of_week": "Wednesday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing B",
+    "notes": "Surgery coverage for evening shift"
+  },
+  {
+    "id": "20250813N",
+    "date": "2025-08-13",
+    "day_of_week": "Wednesday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for night shift"
+  },
+  {
+    "id": "20250814M",
+    "date": "2025-08-14",
+    "day_of_week": "Thursday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for morning shift"
+  },
+  {
+    "id": "20250814E",
+    "date": "2025-08-14",
+
+    "day_of_week": "Thursday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "maternity"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing E",
+    "notes": "Maternity coverage for evening shift"
+  },
+  {
+    "id": "20250814N",
+    "date": "2025-08-14",
+    "day_of_week": "Thursday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "icu"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for night shift"
+  },
+  {
+    "id": "20250815M",
+    "date": "2025-08-15",
+    "day_of_week": "Friday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for morning shift"
+  },
+  {
+    "id": "20250815E",
+    "date": "2025-08-15",
+    "day_of_week": "Friday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Emergency",
+    "location": "ER Main",
+    "notes": "Emergency coverage for evening shift"
+  },
+  {
+    "id": "20250815N",
+    "date": "2025-08-15",
+    "day_of_week": "Friday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for night shift"
+  },
+  {
+    "id": "20250816M",
+    "date": "2025-08-16",
+    "day_of_week": "Saturday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "icu"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for morning shift"
+  },
+  {
+    "id": "20250816E",
+    "date": "2025-08-16",
+    "day_of_week": "Saturday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing B",
+    "notes": "Surgery coverage for evening shift"
+  },
+  {
+    "id": "20250816N",
+    "date": "2025-08-16",
+    "day_of_week": "Saturday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for night shift"
+  },
+  {
+    "id": "20250817M",
+    "date": "2025-08-17",
+    "day_of_week": "Sunday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for morning shift"
+  },
+  {
+    "id": "20250817E",
+    "date": "2025-08-17",
+    "day_of_week": "Sunday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing E",
+    "notes": "Maternity coverage for evening shift"
+  },
+  {
+    "id": "20250817N",
+    "date": "2025-08-17",
+    "day_of_week": "Sunday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for night shift"
+  },
+  {
+    "id": "20250818M",
+    "date": "2025-08-18",
+    "day_of_week": "Monday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for morning shift"
+  },
+  {
+    "id": "20250818E",
+    "date": "2025-08-18",
+    "day_of_week": "Monday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "emergency"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Emergency",
+    "location": "ER Main",
+    "notes": "Emergency coverage for evening shift"
+  },
+  {
+    "id": "20250818N",
+    "date": "2025-08-18",
+    "day_of_week": "Monday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for night shift"
+  },
+  {
+    "id": "20250819M",
+    "date": "2025-08-19",
     "day_of_week": "Tuesday",
     "shift_type": "morning",
     "start_time": "07:00",
@@ -10,26 +510,106 @@
     "required_roles": [
       {
         "role": "nurse",
-        "count": 2,
+        "count": 5,
         "skills_required": []
       },
       {
         "role": "doctor",
         "count": 1,
-        "skills_required": ["icu"]
+        "skills_required": []
       }
     ],
     "is_holiday": false,
     "priority": "normal",
     "department": "ICU",
     "location": "Wing A",
-    "notes": "ICU must be fully staffed"
+    "notes": "ICU coverage for morning shift"
   },
   {
-    "id": "20250814E",
-    "date": "2025-08-14",
+    "id": "20250819E",
+    "date": "2025-08-19",
     "day_of_week": "Tuesday",
-    "shift_type": "Evening",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing B",
+    "notes": "Surgery coverage for evening shift"
+  },
+  {
+    "id": "20250819N",
+    "date": "2025-08-19",
+    "day_of_week": "Tuesday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for night shift"
+  },
+  {
+    "id": "20250820M",
+    "date": "2025-08-20",
+    "day_of_week": "Wednesday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for morning shift"
+  },
+  {
+    "id": "20250820E",
+    "date": "2025-08-20",
+    "day_of_week": "Wednesday",
+    "shift_type": "evening",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -37,18 +617,546 @@
       {
         "role": "nurse",
         "count": 6,
-        "skills_required": []
+        "skills_required": [
+          "maternity"
+        ]
       },
       {
         "role": "doctor",
         "count": 2,
-        "skills_required": ["surgery", "icu"]
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing E",
+    "notes": "Maternity coverage for evening shift"
+  },
+  {
+    "id": "20250820N",
+    "date": "2025-08-20",
+    "day_of_week": "Wednesday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "icu"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for night shift"
+  },
+  {
+    "id": "20250821M",
+    "date": "2025-08-21",
+    "day_of_week": "Thursday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for morning shift"
+  },
+  {
+    "id": "20250821E",
+    "date": "2025-08-21",
+    "day_of_week": "Thursday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Emergency",
+    "location": "ER Main",
+    "notes": "Emergency coverage for evening shift"
+  },
+  {
+    "id": "20250821N",
+    "date": "2025-08-21",
+    "day_of_week": "Thursday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for night shift"
+  },
+  {
+    "id": "20250822M",
+    "date": "2025-08-22",
+    "day_of_week": "Friday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "icu"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
       }
     ],
     "is_holiday": false,
     "priority": "normal",
     "department": "ICU",
     "location": "Wing A",
-    "notes": "ICU must be fully staffed"
+    "notes": "ICU coverage for morning shift"
+  },
+  {
+    "id": "20250822E",
+    "date": "2025-08-22",
+    "day_of_week": "Friday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing B",
+    "notes": "Surgery coverage for evening shift"
+  },
+  {
+    "id": "20250822N",
+    "date": "2025-08-22",
+    "day_of_week": "Friday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for night shift"
+  },
+  {
+    "id": "20250823M",
+    "date": "2025-08-23",
+    "day_of_week": "Saturday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for morning shift"
+  },
+  {
+    "id": "20250823E",
+    "date": "2025-08-23",
+    "day_of_week": "Saturday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing E",
+    "notes": "Maternity coverage for evening shift"
+  },
+  {
+    "id": "20250823N",
+    "date": "2025-08-23",
+    "day_of_week": "Saturday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for night shift"
+  },
+  {
+    "id": "20250824M",
+    "date": "2025-08-24",
+    "day_of_week": "Sunday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for morning shift"
+  },
+  {
+    "id": "20250824E",
+    "date": "2025-08-24",
+    "day_of_week": "Sunday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "emergency"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Emergency",
+    "location": "ER Main",
+    "notes": "Emergency coverage for evening shift"
+  },
+  {
+    "id": "20250824N",
+    "date": "2025-08-24",
+    "day_of_week": "Sunday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 6,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for night shift"
+  },
+  {
+    "id": "20250825M",
+    "date": "2025-08-25",
+    "day_of_week": "Monday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for morning shift"
+  },
+  {
+    "id": "20250825E",
+    "date": "2025-08-25",
+    "day_of_week": "Monday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing B",
+    "notes": "Surgery coverage for evening shift"
+  },
+  {
+    "id": "20250825N",
+    "date": "2025-08-25",
+    "day_of_week": "Monday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General Ward",
+    "location": "Wing C",
+    "notes": "General Ward coverage for night shift"
+  },
+  {
+    "id": "20250826M",
+    "date": "2025-08-26",
+    "day_of_week": "Tuesday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing D",
+    "notes": "Pediatrics coverage for morning shift"
+  },
+  {
+    "id": "20250826E",
+    "date": "2025-08-26",
+    "day_of_week": "Tuesday",
+    "shift_type": "evening",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "maternity"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing E",
+    "notes": "Maternity coverage for evening shift"
+  },
+  {
+    "id": "20250826N",
+    "date": "2025-08-26",
+    "day_of_week": "Tuesday",
+    "shift_type": "night",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "icu"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "ICU",
+    "location": "Wing A",
+    "notes": "ICU coverage for night shift"
   }
 ]
