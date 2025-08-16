@@ -33,7 +33,7 @@
     "id": "20240101A",
     "date": "2024-01-01",
     "day_of_week": "Monday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -58,13 +58,13 @@
     "priority": "low",
     "department": "Maternity",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in maternity"
+    "notes": "Nurse coverage for afternoon shift in maternity"
   },
   {
     "id": "20240101E",
     "date": "2024-01-01",
     "day_of_week": "Monday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -89,7 +89,7 @@
     "priority": "high",
     "department": "Pediatrics",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in emergency"
+    "notes": "Nurse coverage for evening shift in emergency"
   },
   {
     "id": "20240102M",
@@ -124,7 +124,7 @@
     "id": "20240102A",
     "date": "2024-01-02",
     "day_of_week": "Tuesday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -147,13 +147,13 @@
     "priority": "normal",
     "department": "Pediatrics",
     "location": "Wing B",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240102E",
     "date": "2024-01-02",
     "day_of_week": "Tuesday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -173,7 +173,7 @@
     "priority": "high",
     "department": "ICU",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240103M",
@@ -210,7 +210,7 @@
     "id": "20240103A",
     "date": "2024-01-03",
     "day_of_week": "Wednesday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -234,13 +234,13 @@
     "priority": "normal",
     "department": "Emergency",
     "location": "Wing B",
-    "notes": "Nurse coverage for evening shift in pediatrics"
+    "notes": "Nurse coverage for afternoon shift in pediatrics"
   },
   {
     "id": "20240103E",
     "date": "2024-01-03",
     "day_of_week": "Wednesday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -264,7 +264,7 @@
     "priority": "low",
     "department": "Surgery",
     "location": "Wing B",
-    "notes": "Nurse coverage for night shift in emergency"
+    "notes": "Nurse coverage for evening shift in emergency"
   },
   {
     "id": "20240104M",
@@ -296,7 +296,7 @@
     "id": "20240104A",
     "date": "2024-01-04",
     "day_of_week": "Thursday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -318,13 +318,13 @@
     "priority": "normal",
     "department": "Pediatrics",
     "location": "Wing C",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240104E",
     "date": "2024-01-04",
     "day_of_week": "Thursday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -346,7 +346,7 @@
     "priority": "low",
     "department": "ICU",
     "location": "Wing C",
-    "notes": "Nurse coverage for night shift in pediatrics"
+    "notes": "Nurse coverage for evening shift in pediatrics"
   },
   {
     "id": "20240105M",
@@ -384,7 +384,7 @@
     "id": "20240105A",
     "date": "2024-01-05",
     "day_of_week": "Friday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -406,13 +406,13 @@
     "priority": "low",
     "department": "Pediatrics",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in emergency"
+    "notes": "Nurse coverage for afternoon shift in emergency"
   },
   {
     "id": "20240105E",
     "date": "2024-01-05",
     "day_of_week": "Friday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -437,7 +437,7 @@
     "priority": "low",
     "department": "Emergency",
     "location": "Wing A",
-    "notes": "Nurse coverage for night shift in pediatrics"
+    "notes": "Nurse coverage for evening shift in pediatrics"
   },
   {
     "id": "20240106M",
@@ -471,7 +471,7 @@
     "id": "20240106A",
     "date": "2024-01-06",
     "day_of_week": "Saturday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -491,13 +491,13 @@
     "priority": "normal",
     "department": "Maternity",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240106E",
     "date": "2024-01-06",
     "day_of_week": "Saturday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -517,7 +517,7 @@
     "priority": "normal",
     "department": "Emergency",
     "location": "Wing A",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240107M",
@@ -553,7 +553,7 @@
     "id": "20240107A",
     "date": "2024-01-07",
     "day_of_week": "Sunday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -579,13 +579,13 @@
     "priority": "normal",
     "department": "Surgery",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in surgery"
+    "notes": "Nurse coverage for afternoon shift in surgery"
   },
   {
     "id": "20240107E",
     "date": "2024-01-07",
     "day_of_week": "Sunday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -610,7 +610,7 @@
     "priority": "normal",
     "department": "General",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in surgery"
+    "notes": "Nurse coverage for evening shift in surgery"
   },
   {
     "id": "20240108M",
@@ -648,7 +648,7 @@
     "id": "20240108A",
     "date": "2024-01-08",
     "day_of_week": "Monday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -672,13 +672,13 @@
     "priority": "low",
     "department": "Emergency",
     "location": "Wing B",
-    "notes": "Nurse coverage for evening shift in icu"
+    "notes": "Nurse coverage for afternoon shift in icu"
   },
   {
     "id": "20240108E",
     "date": "2024-01-08",
     "day_of_week": "Monday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -703,7 +703,7 @@
     "priority": "high",
     "department": "Maternity",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in maternity"
+    "notes": "Nurse coverage for evening shift in maternity"
   },
   {
     "id": "20240109M",
@@ -740,7 +740,7 @@
     "id": "20240109A",
     "date": "2024-01-09",
     "day_of_week": "Tuesday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -764,13 +764,13 @@
     "priority": "high",
     "department": "Emergency",
     "location": "Wing A",
-    "notes": "Nurse coverage for evening shift in surgery"
+    "notes": "Nurse coverage for afternoon shift in surgery"
   },
   {
     "id": "20240109E",
     "date": "2024-01-09",
     "day_of_week": "Tuesday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -792,7 +792,7 @@
     "priority": "high",
     "department": "ICU",
     "location": "Wing B",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240110M",
@@ -827,7 +827,7 @@
     "id": "20240110A",
     "date": "2024-01-10",
     "day_of_week": "Wednesday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -850,13 +850,13 @@
     "priority": "low",
     "department": "Emergency",
     "location": "Wing A",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240110E",
     "date": "2024-01-10",
     "day_of_week": "Wednesday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -879,7 +879,7 @@
     "priority": "normal",
     "department": "General",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240111M",
@@ -915,7 +915,7 @@
     "id": "20240111A",
     "date": "2024-01-11",
     "day_of_week": "Thursday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -939,13 +939,13 @@
     "priority": "normal",
     "department": "General",
     "location": "Wing A",
-    "notes": "Nurse coverage for evening shift in icu"
+    "notes": "Nurse coverage for afternoon shift in icu"
   },
   {
     "id": "20240111E",
     "date": "2024-01-11",
     "day_of_week": "Thursday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -967,7 +967,7 @@
     "priority": "low",
     "department": "Maternity",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240112M",
@@ -1004,7 +1004,7 @@
     "id": "20240112A",
     "date": "2024-01-12",
     "day_of_week": "Friday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1026,13 +1026,13 @@
     "priority": "high",
     "department": "Pediatrics",
     "location": "Wing C",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240112E",
     "date": "2024-01-12",
     "day_of_week": "Friday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1055,7 +1055,7 @@
     "priority": "high",
     "department": "Maternity",
     "location": "Wing B",
-    "notes": "Nurse coverage for night shift in surgery"
+    "notes": "Nurse coverage for evening shift in surgery"
   },
   {
     "id": "20240113M",
@@ -1089,7 +1089,7 @@
     "id": "20240113A",
     "date": "2024-01-13",
     "day_of_week": "Saturday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1114,13 +1114,13 @@
     "priority": "low",
     "department": "General",
     "location": "Wing C",
-    "notes": "Nurse coverage for evening shift in emergency"
+    "notes": "Nurse coverage for afternoon shift in emergency"
   },
   {
     "id": "20240113E",
     "date": "2024-01-13",
     "day_of_week": "Saturday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1142,7 +1142,7 @@
     "priority": "low",
     "department": "Maternity",
     "location": "Wing A",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240114M",
@@ -1178,7 +1178,7 @@
     "id": "20240114A",
     "date": "2024-01-14",
     "day_of_week": "Sunday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1202,13 +1202,13 @@
     "priority": "normal",
     "department": "General",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240114E",
     "date": "2024-01-14",
     "day_of_week": "Sunday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1231,7 +1231,7 @@
     "priority": "high",
     "department": "Surgery",
     "location": "Wing A",
-    "notes": "Nurse coverage for night shift in pediatrics"
+    "notes": "Nurse coverage for evening shift in pediatrics"
   },
   {
     "id": "20240115M",
@@ -1265,7 +1265,7 @@
     "id": "20240115A",
     "date": "2024-01-15",
     "day_of_week": "Monday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1291,13 +1291,13 @@
     "priority": "normal",
     "department": "Pediatrics",
     "location": "Wing A",
-    "notes": "Nurse coverage for evening shift in pediatrics"
+    "notes": "Nurse coverage for afternoon shift in pediatrics"
   },
   {
     "id": "20240115E",
     "date": "2024-01-15",
     "day_of_week": "Monday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1319,7 +1319,7 @@
     "priority": "low",
     "department": "Surgery",
     "location": "Wing A",
-    "notes": "Nurse coverage for night shift in pediatrics"
+    "notes": "Nurse coverage for evening shift in pediatrics"
   },
   {
     "id": "20240116M",
@@ -1356,7 +1356,7 @@
     "id": "20240116A",
     "date": "2024-01-16",
     "day_of_week": "Tuesday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1378,13 +1378,13 @@
     "priority": "low",
     "department": "ICU",
     "location": "Wing C",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240116E",
     "date": "2024-01-16",
     "day_of_week": "Tuesday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1410,7 +1410,7 @@
     "priority": "low",
     "department": "Maternity",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in pediatrics"
+    "notes": "Nurse coverage for evening shift in pediatrics"
   },
   {
     "id": "20240117M",
@@ -1445,7 +1445,7 @@
     "id": "20240117A",
     "date": "2024-01-17",
     "day_of_week": "Wednesday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1467,13 +1467,13 @@
     "priority": "high",
     "department": "Pediatrics",
     "location": "Wing A",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240117E",
     "date": "2024-01-17",
     "day_of_week": "Wednesday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1496,7 +1496,7 @@
     "priority": "high",
     "department": "Surgery",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in maternity"
+    "notes": "Nurse coverage for evening shift in maternity"
   },
   {
     "id": "20240118M",
@@ -1530,7 +1530,7 @@
     "id": "20240118A",
     "date": "2024-01-18",
     "day_of_week": "Thursday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1553,13 +1553,13 @@
     "priority": "normal",
     "department": "Maternity",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240118E",
     "date": "2024-01-18",
     "day_of_week": "Thursday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1584,7 +1584,7 @@
     "priority": "high",
     "department": "General",
     "location": "Main Building",
-    "notes": "Nurse coverage for night shift in pediatrics"
+    "notes": "Nurse coverage for evening shift in pediatrics"
   },
   {
     "id": "20240119M",
@@ -1620,7 +1620,7 @@
     "id": "20240119A",
     "date": "2024-01-19",
     "day_of_week": "Friday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1646,13 +1646,13 @@
     "priority": "high",
     "department": "Surgery",
     "location": "Main Building",
-    "notes": "Nurse coverage for evening shift in pediatrics"
+    "notes": "Nurse coverage for afternoon shift in pediatrics"
   },
   {
     "id": "20240119E",
     "date": "2024-01-19",
     "day_of_week": "Friday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1672,7 +1672,7 @@
     "priority": "normal",
     "department": "Surgery",
     "location": "Wing C",
-    "notes": "Nurse coverage for night shift in general"
+    "notes": "Nurse coverage for evening shift in general"
   },
   {
     "id": "20240120M",
@@ -1709,7 +1709,7 @@
     "id": "20240120A",
     "date": "2024-01-20",
     "day_of_week": "Saturday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1731,13 +1731,13 @@
     "priority": "normal",
     "department": "Pediatrics",
     "location": "Wing B",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240120E",
     "date": "2024-01-20",
     "day_of_week": "Saturday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1763,7 +1763,7 @@
     "priority": "low",
     "department": "General",
     "location": "Wing B",
-    "notes": "Nurse coverage for night shift in emergency"
+    "notes": "Nurse coverage for evening shift in emergency"
   },
   {
     "id": "20240121M",
@@ -1800,7 +1800,7 @@
     "id": "20240121A",
     "date": "2024-01-21",
     "day_of_week": "Sunday",
-    "shift_type": "evening",
+    "shift_type": "afternoon",
     "start_time": "15:00",
     "end_time": "23:00",
     "duration_hours": 8,
@@ -1820,13 +1820,13 @@
     "priority": "high",
     "department": "Pediatrics",
     "location": "Wing A",
-    "notes": "Nurse coverage for evening shift in general"
+    "notes": "Nurse coverage for afternoon shift in general"
   },
   {
     "id": "20240121E",
     "date": "2024-01-21",
     "day_of_week": "Sunday",
-    "shift_type": "night",
+    "shift_type": "evening",
     "start_time": "23:00",
     "end_time": "07:00",
     "duration_hours": 8,
@@ -1851,6 +1851,801 @@
     "priority": "low",
     "department": "ICU",
     "location": "Wing B",
-    "notes": "Nurse coverage for night shift in maternity"
+    "notes": "Nurse coverage for evening shift in maternity"
+  },
+  {
+    "id": "20240122M",
+    "date": "2024-01-22",
+    "day_of_week": "Monday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": [
+          "emergency"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "pediatrics",
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing B",
+    "notes": "Nurse coverage for morning shift in emergency"
+  },
+  {
+    "id": "20240122A",
+    "date": "2024-01-22",
+    "day_of_week": "Monday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "icu",
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General",
+    "location": "Main Building",
+    "notes": "Nurse coverage for afternoon shift in pediatrics"
+  },
+  {
+    "id": "20240122E",
+    "date": "2024-01-22",
+    "day_of_week": "Monday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": [
+          "icu",
+          "emergency"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing C",
+    "notes": "Nurse coverage for evening shift in icu"
+  },
+  {
+    "id": "20240123M",
+    "date": "2024-01-23",
+    "day_of_week": "Tuesday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": [
+          "surgery",
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "low",
+    "department": "Emergency",
+    "location": "Main Building",
+    "notes": "Nurse coverage for morning shift in surgery"
+  },
+  {
+    "id": "20240123A",
+    "date": "2024-01-23",
+    "day_of_week": "Tuesday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "icu"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "Pediatrics",
+    "location": "Wing C",
+    "notes": "Nurse coverage for afternoon shift in general"
+  },
+  {
+    "id": "20240123E",
+    "date": "2024-01-23",
+    "day_of_week": "Tuesday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": [
+          "maternity"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "maternity"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "Emergency",
+    "location": "Wing C",
+    "notes": "Nurse coverage for evening shift in maternity"
+  },
+  {
+    "id": "20240124M",
+    "date": "2024-01-24",
+    "day_of_week": "Wednesday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "icu",
+          "surgery"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing C",
+    "notes": "Nurse coverage for morning shift in general"
+  },
+  {
+    "id": "20240124A",
+    "date": "2024-01-24",
+    "day_of_week": "Wednesday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": [
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Main Building",
+    "notes": "Nurse coverage for afternoon shift in surgery"
+  },
+  {
+    "id": "20240124E",
+    "date": "2024-01-24",
+    "day_of_week": "Wednesday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "surgery",
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Main Building",
+    "notes": "Nurse coverage for evening shift in general"
+  },
+  {
+    "id": "20240125M",
+    "date": "2024-01-25",
+    "day_of_week": "Thursday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": [
+          "pediatrics",
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing B",
+    "notes": "Nurse coverage for morning shift in pediatrics"
+  },
+  {
+    "id": "20240125A",
+    "date": "2024-01-25",
+    "day_of_week": "Thursday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "emergency",
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing B",
+    "notes": "Nurse coverage for afternoon shift in general"
+  },
+  {
+    "id": "20240125E",
+    "date": "2024-01-25",
+    "day_of_week": "Thursday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "General",
+    "location": "Wing C",
+    "notes": "Nurse coverage for evening shift in general"
+  },
+  {
+    "id": "20240126M",
+    "date": "2024-01-26",
+    "day_of_week": "Friday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": [
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "emergency",
+          "maternity"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Maternity",
+    "location": "Wing C",
+    "notes": "Nurse coverage for morning shift in surgery"
+  },
+  {
+    "id": "20240126A",
+    "date": "2024-01-26",
+    "day_of_week": "Friday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "low",
+    "department": "ICU",
+    "location": "Wing C",
+    "notes": "Nurse coverage for afternoon shift in general"
+  },
+  {
+    "id": "20240126E",
+    "date": "2024-01-26",
+    "day_of_week": "Friday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "Surgery",
+    "location": "Wing C",
+    "notes": "Nurse coverage for evening shift in general"
+  },
+  {
+    "id": "20240127M",
+    "date": "2024-01-27",
+    "day_of_week": "Saturday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": [
+          "icu"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Wing A",
+    "notes": "Nurse coverage for morning shift in icu"
+  },
+  {
+    "id": "20240127A",
+    "date": "2024-01-27",
+    "day_of_week": "Saturday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": [
+          "icu",
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "maternity"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing B",
+    "notes": "Nurse coverage for afternoon shift in icu"
+  },
+  {
+    "id": "20240127E",
+    "date": "2024-01-27",
+    "day_of_week": "Saturday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": [
+          "icu",
+          "surgery"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "icu"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "low",
+    "department": "Maternity",
+    "location": "Wing B",
+    "notes": "Nurse coverage for evening shift in icu"
+  },
+  {
+    "id": "20240128M",
+    "date": "2024-01-28",
+    "day_of_week": "Sunday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": [
+          "icu",
+          "emergency"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "icu",
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": true,
+    "priority": "high",
+    "department": "General",
+    "location": "Wing B",
+    "notes": "Nurse coverage for morning shift in icu"
+  },
+  {
+    "id": "20240128A",
+    "date": "2024-01-28",
+    "day_of_week": "Sunday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "maternity",
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": true,
+    "priority": "low",
+    "department": "Maternity",
+    "location": "Wing A",
+    "notes": "Nurse coverage for afternoon shift in general"
+  },
+  {
+    "id": "20240128E",
+    "date": "2024-01-28",
+    "day_of_week": "Sunday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": [
+          "general"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "maternity"
+        ]
+      }
+    ],
+    "is_holiday": true,
+    "priority": "normal",
+    "department": "ICU",
+    "location": "Wing C",
+    "notes": "Nurse coverage for evening shift in general"
+  },
+  {
+    "id": "20240129M",
+    "date": "2024-01-29",
+    "day_of_week": "Monday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 2,
+        "skills_required": [
+          "surgery",
+          "emergency"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "pediatrics"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Emergency",
+    "location": "Main Building",
+    "notes": "Nurse coverage for morning shift in surgery"
+  },
+  {
+    "id": "20240129A",
+    "date": "2024-01-29",
+    "day_of_week": "Monday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 3,
+        "skills_required": [
+          "maternity",
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "pediatrics",
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "General",
+    "location": "Wing C",
+    "notes": "Nurse coverage for afternoon shift in maternity"
+  },
+  {
+    "id": "20240129E",
+    "date": "2024-01-29",
+    "day_of_week": "Monday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": [
+          "pediatrics"
+        ]
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "emergency"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "high",
+    "department": "Maternity",
+    "location": "Wing B",
+    "notes": "Nurse coverage for evening shift in pediatrics"
+  },
+  {
+    "id": "20240130M",
+    "date": "2024-01-30",
+    "day_of_week": "Tuesday",
+    "shift_type": "morning",
+    "start_time": "07:00",
+    "end_time": "15:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": [
+          "general"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Surgery",
+    "location": "Main Building",
+    "notes": "Nurse coverage for morning shift in general"
+  },
+  {
+    "id": "20240130A",
+    "date": "2024-01-30",
+    "day_of_week": "Tuesday",
+    "shift_type": "afternoon",
+    "start_time": "15:00",
+    "end_time": "23:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 4,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 2,
+        "skills_required": []
+      }
+    ],
+    "is_holiday": false,
+    "priority": "low",
+    "department": "Emergency",
+    "location": "Main Building",
+    "notes": "Nurse coverage for afternoon shift in general"
+  },
+  {
+    "id": "20240130E",
+    "date": "2024-01-30",
+    "day_of_week": "Tuesday",
+    "shift_type": "evening",
+    "start_time": "23:00",
+    "end_time": "07:00",
+    "duration_hours": 8,
+    "required_roles": [
+      {
+        "role": "nurse",
+        "count": 5,
+        "skills_required": []
+      },
+      {
+        "role": "doctor",
+        "count": 1,
+        "skills_required": [
+          "icu"
+        ]
+      }
+    ],
+    "is_holiday": false,
+    "priority": "normal",
+    "department": "Pediatrics",
+    "location": "Wing A",
+    "notes": "Nurse coverage for evening shift in general"
   }
 ]

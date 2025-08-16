@@ -11,3 +11,5 @@ isort
 pytest
 plotly 
 dash
+streamlit
+datetime
