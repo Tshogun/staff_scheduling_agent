@@ -9,7 +9,8 @@ black
 mpy
 isort
 pytest
-plotly 
-dash
-streamlit
+jinja2
+flask
+flask_sqlalchemy
 datetime
+dash

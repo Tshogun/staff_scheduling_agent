@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Results</title>
+</head>
+<body>
+    <h1>Schedule Assignments</h1>
+
+    {% if assignments %}
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Shift ID</th>
+                    <th>Assigned Staff</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for assignment in assignments %}
+                    <tr>
+                        <td>{{ assignment.shift_id }}</td>
+                        <td>
+                            <ul>
+                                {% for staff_id in assignment.staff_ids %}
+                                    <li>{{ staff_id }}</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No assignments found.</p>
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
